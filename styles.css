@@ -313,6 +313,54 @@ span{
     transform: translateY(-5px) scale(1.03);
     cursor: pointer;
 }
+.certificates {
+    text-align: center;
+    background-color: #0d1117; /* Dark background with a slight greenish tone */
+    padding: 50px 20px;
+}
+
+.heading {
+    color: #00ffcc; /* Neon Greenish Light Color */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+}
+
+.heading span {
+    color: #ffcc00; /* Yellowish Accent */
+}
+
+.certificate-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.certificate-box {
+    background: linear-gradient(145deg, #0f131a, #1a1f27);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.3); /* Neon glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 255, 204, 0.6);
+}
+
+.certificate-box img {
+    width: 100%;
+    height: 220px; /* Keep all images same height */
+    object-fit: cover; /* Ensures all certificates look uniform */
+    border-radius: 8px;
+    border: 2px solid rgba(0, 255, 204, 0.3); /* Greenish border glow */
+}
 
 /* Contact section */
 
